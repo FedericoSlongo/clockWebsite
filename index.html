@@ -6,9 +6,11 @@
 
         <link rel="stylesheet" href="./style.css">
     </head>
-    <body onload="checkState();">
-        <button onclick="changeState();">Fullscreen</button>
-
+    <body onload="updateTime();">
+        <button id = "fullscreenButton" onclick = "changeState();">Fullscreen</button>
+        
+        <h1 id = "fineDate">h - m - s</h1>
+        <h2 id = "date">dd - mm - yyyy</h2>
 
         <script src="./javascript.js" async defer></script>
     </body>
