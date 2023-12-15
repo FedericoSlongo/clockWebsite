@@ -1,0 +1,8 @@
+button{
+    background-color: cyan;
+    border: 1px solid rgba(1, 236, 236, 0.7);
+    border-radius: 5px;
+    
+    width: 100px;
+    height: 30px;
+}
