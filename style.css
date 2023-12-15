@@ -4,19 +4,10 @@
     font-style: normal;
 }
 
-button{
-    background-color: cyan;
-    border: 1px solid rgba(0, 255, 255, 0.7);
-    border-radius: 5px;
-    
-    width: 100px;
-    height: 30px;
-}
-
 h1{
     font-family: 'monocraft';
-    
-    margin-left: 50%;
+    word-spacing: -70px;
+    margin-left: 44%;
     font-size: 1000%;
 }
 
@@ -27,16 +18,14 @@ h2{
     font-size: 200%;
 }
 
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
+#backgroundVideo {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
 }
-  
-/* Add some content at the bottom of the video/page */
+
 .content {
     position: fixed;
     bottom: 0;
@@ -44,4 +33,18 @@ h2{
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+}
+
+button{
+    position: fixed;
+
+    color: #f1f1f1;
+    background: rgba(0, 0, 0, 0.3);
+    border: 0px solid rgba(0, 0, 0, 0.3);
+    
+    top: 0px;
+    left: 0px;
+
+    width: 90px;
+    height: 30px;
 }

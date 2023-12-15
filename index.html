@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body onload="updateTime();">
-        <video autoplay muted loop id="myVideo">
+        <video autoplay muted loop id="backgroundVideo">
             <source src="./background/video/lofiCityStuff.mp4" type="video/mp4">
         </video>
 
-        <!-- <button id = "fullscreenButton" class="content" onclick = "changeState();">Fullscreen</button> -->
+        <button id = "fullscreenButton" onclick = "changeState();" onmouseover="unHideButton();" onmouseleave="hideButton();">Fullscreen</button>
         
         <h1 id = "fineDate" class="content">h - m - s</h1>
         <h2 id = "date" class="content">dd - mm - yyyy</h2>

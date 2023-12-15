@@ -10,10 +10,21 @@ function updateTime() {
     setTimeout(function() {
         dateVar = new Date();
         var time = dateVar.getTime();
-        document.getElementById('date').innerText = (dateVar.getDay()) + " - " + (dateVar.getMonth() + 1) + " - " + (dateVar.getFullYear() + 1);
-        document.getElementById('fineDate').innerText = dateVar.getHours() + "-" + (dateVar.getMinutes() < 10 ? "0" +  dateVar.getMinutes() : dateVar.getMinutes()) + "-" + (dateVar.getSeconds() < 10 ? "0" +  dateVar.getSeconds() : dateVar.getSeconds());
+        document.getElementById('date').innerText = (dateVar.getDate() < 10 ? "0" +  dateVar.getDate() : dateVar.getDate()) + " - " + ((dateVar.getMonth() + 1) < 10 ? "0" +  (dateVar.getMonth() + 1) : (dateVar.getMonth() + 1) + " - " + (dateVar.getFullYear() + 1));
+        document.getElementById('fineDate').innerText = (dateVar.getHours() < 10 ? "0" +  dateVar.getHours() : dateVar.getHours()) + " - " + (dateVar.getMinutes() < 10 ? "0" +  dateVar.getMinutes() : dateVar.getMinutes()) + " - " + (dateVar.getSeconds() < 10 ? "0" +  dateVar.getSeconds() : dateVar.getSeconds());
         updateTime();
     }, 100);
+}
+
+
+
+function unHideButton(){
+    document.getElementById("fullscreenButton").style.background = "rgba(0, 0, 0, 0.3)";
+    document.getElementById("fullscreenButton").style.color = "#f1f1f1";
+}
+function hideButton(){
+    document.getElementById("fullscreenButton").style.background = "rgba(0, 0, 0, 0)";
+    document.getElementById("fullscreenButton").style.color = "rgba(0, 0, 0, 0)";
 }
 
 
@@ -40,10 +51,7 @@ function openFullscreen() {
     elem.msRequestFullscreen();
   }
 
-  document.getElementById("fullscreenButton").style.display = "none";
-
-  document.getElementById("myVideo").style.minWidth = "100%";
-  document.getElementById("myVideo").style.minHeight = "100%";
+  hideButton();
 }
 
 /* Close fullscreen */
