@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Monocraft";
+    src: url(./fonts/Monocraft.ttf) format("truetype");
+    font-style: normal;
+}
+
 button{
     background-color: cyan;
     border: 1px solid rgba(0, 255, 255, 0.7);
@@ -8,11 +14,34 @@ button{
 }
 
 h1{
-    margin-left: auto;
-    font-size: 700%;
+    font-family: 'monocraft';
+    
+    margin-left: 55%;
+    font-size: 1000%;
 }
 
 h2{
-    margin-left: auto;
+    font-family: 'monocraft';
+
+    margin-left:80%;
     font-size: 200%;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+  
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
 }

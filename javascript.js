@@ -11,7 +11,7 @@ function updateTime() {
         dateVar = new Date();
         var time = dateVar.getTime();
         document.getElementById('date').innerText = (dateVar.getDay()) + " - " + (dateVar.getMonth() + 1) + " - " + (dateVar.getFullYear() + 1);
-        document.getElementById('fineDate').innerText = dateVar.getHours() + " - " + dateVar.getMinutes() + " - " + (dateVar.getSeconds() < 10 ? "0" +  dateVar.getSeconds(): dateVar.getSeconds());
+        document.getElementById('fineDate').innerText = dateVar.getHours() + "-" + (dateVar.getMinutes() < 10 ? "0" +  dateVar.getMinutes() : dateVar.getMinutes()) + "-" + (dateVar.getSeconds() < 10 ? "0" +  dateVar.getSeconds() : dateVar.getSeconds());
         updateTime();
     }, 100);
 }
@@ -41,8 +41,9 @@ function openFullscreen() {
   }
 
   document.getElementById("fullscreenButton").style.display = "none";
-  document.getElementById("fullscreenButton").style.height = "1px";
-  document.getElementById("fullscreenButton").style.width = "1px";
+
+  document.getElementById("myVideo").style.minWidth = "100%";
+  document.getElementById("myVideo").style.minHeight = "100%";
 }
 
 /* Close fullscreen */

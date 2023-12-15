@@ -7,10 +7,14 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body onload="updateTime();">
-        <button id = "fullscreenButton" onclick = "changeState();">Fullscreen</button>
+        <video autoplay muted loop id="myVideo">
+            <source src="./background/video/lofiCityStuff.mp4" type="video/mp4">
+        </video>
+
+        <!-- <button id = "fullscreenButton" class="content" onclick = "changeState();">Fullscreen</button> -->
         
-        <h1 id = "fineDate">h - m - s</h1>
-        <h2 id = "date">dd - mm - yyyy</h2>
+        <h1 id = "fineDate" class="content">h - m - s</h1>
+        <h2 id = "date" class="content">dd - mm - yyyy</h2>
 
         <script src="./javascript.js" async defer></script>
     </body>
