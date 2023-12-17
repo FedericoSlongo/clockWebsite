@@ -1,23 +1,29 @@
+/* Monocraft loading */
 @font-face {
     font-family: "Monocraft";
     src: url(./fonts/Monocraft.ttf) format("truetype");
     font-style: normal;
 }
 
-h1{
+/* All text uses monocraft */
+*{
     font-family: 'monocraft';
+}
+
+/* h - m - s */
+h1{
     word-spacing: -70px;
-    margin-left: 44%;
+    margin-left: 47%;
     font-size: 1000%;
 }
 
+/* dd - mm - yyyy */
 h2{
-    font-family: 'monocraft';
-
     margin-left:80%;
     font-size: 200%;
 }
 
+/* The video in the background */
 #backgroundVideo {
     position: fixed;
     right: 0;
@@ -26,6 +32,7 @@ h2{
     min-height: 100%;
 }
 
+/* All parts to position the date */
 .content {
     position: fixed;
     bottom: 0;
@@ -35,8 +42,9 @@ h2{
     padding: 20px;
 }
 
+/* The button to go in fullscreen */
 button{
-    position: fixed;
+    position: absolute;
 
     color: #f1f1f1;
     background: rgba(0, 0, 0, 0.3);
@@ -45,6 +53,36 @@ button{
     top: 0px;
     left: 0px;
 
-    width: 90px;
+    width: 110px;
+    height: 40px;
+}
+
+/* Credit link */
+#credit{
+    position: fixed;
+
+    background: rgba(0, 0, 0, 0.3);
+    border: 0px solid rgba(0, 0, 0, 0.3);
+    
+    bottom: 0px;
+    left: 0px;
+
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100px;
     height: 30px;
+}
+
+/* Credit links */
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+a:visited {
+    color: lightcyan;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
 }
