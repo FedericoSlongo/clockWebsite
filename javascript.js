@@ -27,8 +27,10 @@ function hideButton(){
 }
 
 /* Function to change the background (Not Working) */
-function changeVideoBackground(){
-  document.getElementById("videoBackground").src = "./background/video/[REDACTED].mp4";
+function changeToImage(){
+  document.getElementById("videoBackground").style.display = "none";
+  document.getElementById("videoBackground").src = "./";
+  return document.getElementById("videoBackground").src;
 }
 
 
