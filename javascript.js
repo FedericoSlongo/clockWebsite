@@ -8,9 +8,9 @@ function updateTime() {
     /* Gets the current date from the system */
     dateVar = new Date();
     /* dd - mm - yyyy */
-    document.getElementById('date').innerText = (dateVar.getDate() < 10 ? "0" +  dateVar.getDate() : dateVar.getDate()) + " - " + ((dateVar.getMonth() + 1) < 10 ? "0" +  (dateVar.getMonth() + 1) : (dateVar.getMonth() + 1) + " - " + (dateVar.getFullYear() + 1));
+    document.getElementById('date').innerText = (dateVar.getDate() < 10 ? "0" +  dateVar.getDate() : dateVar.getDate()) + " - " + ((dateVar.getMonth() + 1) < 10 ? "0" +  (dateVar.getMonth() + 1) : (dateVar.getMonth() + 1) + " - " + dateVar.getFullYear());
     /* h - m - s */
-    document.getElementById('fineDate').innerText = (dateVar.getHours() < 10 ? "0" +  dateVar.getHours() : dateVar.getHours()) + " - " + (dateVar.getMinutes() < 10 ? "0" +  dateVar.getMinutes() : dateVar.getMinutes()) + " - " + (dateVar.getSeconds() < 10 ? "0" +  dateVar.getSeconds() : dateVar.getSeconds());
+    document.getElementById('fineDate').innerText = ((dateVar.getHours() + 1) < 10 ? "0" +  (dateVar.getHours() + 1) : (dateVar.getHours() + 1)) + " - " + (dateVar.getMinutes() < 10 ? "0" +  dateVar.getMinutes() : dateVar.getMinutes()) + " - " + (dateVar.getSeconds() < 10 ? "0" +  dateVar.getSeconds() : dateVar.getSeconds());
     updateTime();
   }, 100);
 }
