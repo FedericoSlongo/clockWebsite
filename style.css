@@ -13,7 +13,7 @@
 /* h - m - s */
 h1{
     word-spacing: -70px;
-    margin-left: 47%;
+    margin-left: 42%;
     font-size: 1000%;
 }
 
@@ -39,7 +39,7 @@ h2{
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
-    padding: 20px;
+    padding: 1%;
 }
 
 /* The button to go in fullscreen */
