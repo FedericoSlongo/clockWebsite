@@ -1,5 +1,6 @@
 /* Variable were the date gets saved */
 var dateVar;
+var dateDay = null;
 
 /* Function that updates time */
 function updateTime() {
@@ -7,14 +8,27 @@ function updateTime() {
   setTimeout(function() {
     /* Gets the current date from the system */
     dateVar = new Date();
+
     /* dd - mm - yyyy */
-    document.getElementById('date').innerText = (dateVar.getDate() < 10 ? "0" +  dateVar.getDate() : dateVar.getDate()) + " - " + ((dateVar.getMonth() + 1) < 10 ? "0" +  (dateVar.getMonth() + 1) : (dateVar.getMonth() + 1) + " - " + dateVar.getFullYear());
+    if(dateDay == null || (dateVar.getHours() + 1 == 23))
+      updateBigDate();
+
     /* h - m - s */
     document.getElementById('fineDate').innerText = ((dateVar.getHours() + 1) < 10 ? "0" +  (dateVar.getHours() + 1) : (dateVar.getHours() + 1)) + " - " + (dateVar.getMinutes() < 10 ? "0" +  dateVar.getMinutes() : dateVar.getMinutes()) + " - " + (dateVar.getSeconds() < 10 ? "0" +  dateVar.getSeconds() : dateVar.getSeconds());
     updateTime();
   }, 100);
 }
 
+function updateBigDate(){
+  /* dd - mm - yyyy */
+  dateDay = (dateVar.getDate() < 10 ? "0" +  dateVar.getDate() : dateVar.getDate()) + " - ";
+  //Month
+  dateDay += ((dateVar.getMonth() + 1) < 10 ? "0" +  (dateVar.getMonth() + 1) : (dateVar.getMonth() + 1)) + " - ";
+  //Year
+  dateDay += dateVar.getFullYear();
+  
+  document.getElementById('date').innerText = dateDay;
+}
 
 /* Function to Hide and UnHide the fullscreen button */
 function unHideButton(){
