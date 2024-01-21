@@ -14,7 +14,7 @@ function updateTime() {
       updateBigDate();
 
     /* h - m - s */
-    document.getElementById('fineDate').innerText = ((dateVar.getHours() + 1) < 10 ? "0" +  (dateVar.getHours() + 1) : (dateVar.getHours() + 1)) + " - " + (dateVar.getMinutes() < 10 ? "0" +  dateVar.getMinutes() : dateVar.getMinutes()) + " - " + (dateVar.getSeconds() < 10 ? "0" +  dateVar.getSeconds() : dateVar.getSeconds());
+    document.getElementById('fineDate').innerText = (dateVar.getHours() < 10 ? "0" +  dateVar.getHours() : dateVar.getHours()) + " - " + (dateVar.getMinutes() < 10 ? "0" +  dateVar.getMinutes() : dateVar.getMinutes()) + " - " + (dateVar.getSeconds() < 10 ? "0" +  dateVar.getSeconds() : dateVar.getSeconds());
     updateTime();
   }, 100);
 }
