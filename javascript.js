@@ -2,6 +2,11 @@
 var dateVar;
 var dateDay = null;
 
+function inzitialSetup(){
+  hideButton();
+  updateTime();
+}
+
 /* Function that updates time */
 function updateTime() {
   /* Waits for a second before updating the time */
@@ -40,6 +45,7 @@ function hideButton(){
   document.getElementById("fullscreenButton").style.color = "rgba(0, 0, 0, 0)";
 }
 
+//Going to get replace by a menu to select different formats and videos/images
 /* Function to change the background (Not Working) */
 function changeToImage(){
   document.getElementById("videoBackground").style.display = "none";
