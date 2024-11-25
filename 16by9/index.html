@@ -5,20 +5,22 @@
         <title>Clock</title>
 
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/menu.css">
-        
         <link rel="icon" href="../icons/iconV2.png">
     </head>
     <body onload="inzitialSetup();">
         <video autoplay muted loop id="backgroundVideo">
             <source src="../background/video/lofiCityStuff.mp4" type="video/mp4" id = "videoBackground">
         </video>
+
+        <button id = "menuButton" onclick = "changeState();" onmouseover="unHideButton('menuButton');" onmouseleave="hideButton('menuButton');">Menu</button>
+
+        <button id = "fullscreenButton" onclick = "changeState();" onmouseover="unHideButton('fullscreenButton');" onmouseleave="hideButton('fullscreenButton');">Fullscreen</button>
         
         <p id = "credit"><a href = "https://twitter.com/kael333_">© Credit</a></p>
 
-        <h1 id = "mainMenu" class="content">h - m - s</h1>
+        <h1 id = "fineDate" class="content">h - m - s</h1>
         <h2 id = "date" class="content">dd - mm - yyyy</h2>
 
-        <!--<script src="./javascript.js" async defer></script>-->
+        <script src="../javascript.js" async defer></script>
     </body>
 </html>

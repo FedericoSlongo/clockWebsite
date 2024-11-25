@@ -3,7 +3,8 @@ var dateVar;
 var dateDay = null;
 
 function inzitialSetup(){
-  hideButton();
+  hideButton('fullscreenButton');
+  hideButton('menuButton');
   updateTime();
 }
 
@@ -36,13 +37,13 @@ function updateBigDate(){
 }
 
 /* Function to Hide and UnHide the fullscreen button */
-function unHideButton(){
-  document.getElementById("fullscreenButton").style.background = "rgba(0, 0, 0, 0.3)";
-  document.getElementById("fullscreenButton").style.color = "#f1f1f1";
+function unHideButton(buttonName){
+  document.getElementById(buttonName).style.background = "rgba(0, 0, 0, 0.3)";
+  document.getElementById(buttonName).style.color = "#f1f1f1";
 }
-function hideButton(){
-  document.getElementById("fullscreenButton").style.background = "rgba(0, 0, 0, 0)";
-  document.getElementById("fullscreenButton").style.color = "rgba(0, 0, 0, 0)";
+function hideButton(buttonName){
+  document.getElementById(buttonName).style.background = "rgba(0, 0, 0, 0)";
+  document.getElementById(buttonName).style.color = "rgba(0, 0, 0, 0)";
 }
 
 //Going to get replace by a menu to select different formats and videos/images

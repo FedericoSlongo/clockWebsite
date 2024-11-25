@@ -11,14 +11,14 @@
 }
 
 /* h - m - s */
-h1{
+#fineDate{
     word-spacing: -70px;
     margin-left: 42%;
     font-size: 1000%;
 }
 
 /* dd - mm - yyyy */
-h2{
+#date{
     margin-left:80%;
     font-size: 200%;
 }
@@ -42,8 +42,23 @@ h2{
     padding: 1%;
 }
 
-/* The button to go in fullscreen */
-button{
+/* The top right button to go in fullscreen */
+#fullscreenButton{
+    position: absolute;
+
+    color: #f1f1f1;
+    background: rgba(0, 0, 0, 0.3);
+    border: 0px solid rgba(0, 0, 0, 0.3);
+    
+    top: 0px;
+    right: 0px;
+
+    width: 110px;
+    height: 40px;
+}
+
+/* The top left button to go in fullscreen */
+#menuButton{
     position: absolute;
 
     color: #f1f1f1;
