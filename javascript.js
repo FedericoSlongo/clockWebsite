@@ -68,6 +68,11 @@ function changeState(){
   clicked = !clicked;
 }
 
+/* Redirects to the menu */
+function menuRedirect() {
+  window.location.replace("../index.html");
+}
+
 /* View in fullscreen */
 function openFullscreen() {
   if (elem.requestFullscreen) {

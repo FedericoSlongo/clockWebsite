@@ -13,21 +13,22 @@
 /* h - m - s */
 #fineDate{
     word-spacing: -70px;
-    margin-left: 42%;
+    margin-left: 71%;
     font-size: 1000%;
+    bottom: 4%;
 }
 
 /* dd - mm - yyyy */
 #date{
-    margin-left:80%;
+    margin-left:90%;
     font-size: 200%;
 }
 
 /* The video in the background */
 #backgroundVideo {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 0px;
+    bottom: 0px;
     min-width: 100%;
     min-height: 100%;
 }
